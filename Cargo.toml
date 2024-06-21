@@ -15,14 +15,14 @@ edition = "2021"
 ################################# Dependencies ################################
 
 [dependencies]
-ark-ff = { git = "https://github.com/Antalpha-Labs/algebra/" }
-ark-ec = { git = "https://github.com/Antalpha-Labs/algebra/" }
-ark-serialize = { version = "0.4.0", default-features = false, features = [ "derive" ] }
-ark-poly = { version = "0.4.0", default-features = false }
+ark-ff = { version = "0.4.0", path = "../algebra/ff" }
+ark-ec = { version = "0.4.0", path = "../algebra/ec" }
+ark-serialize = { version = "0.4.0", path = "../algebra/serialize", features = [ "derive" ] }
+ark-poly = { version = "0.4.0", path = "../algebra/poly" }
 ark-std = { version = "0.4.0", default-features = false }
-ark-relations = { git = "https://github.com/Antalpha-Labs/snark/" }
-ark-crypto-primitives = { git = "https://github.com/Antalpha-Labs/crypto-primitives/", features = ["snark", "sponge"] }
-ark-r1cs-std = { git = "https://github.com/Antalpha-Labs/r1cs-std/", optional = true }
+ark-relations = { version = "0.4.0", path = "../snark/relations" }
+ark-crypto-primitives = { version = "0.4.0", path = "../crypto-primitives/crypto-primitives", features = ["snark", "sponge"] }
+ark-r1cs-std = { version = "0.4.0", path = "../r1cs-std", optional = true }
 
 tracing = { version = "0.1", default-features = false, features = [ "attributes" ], optional = true }
 derivative = { version = "2.0", features = ["use_core"], optional = true}
@@ -38,7 +38,7 @@ ark-mnt4-298 = { version = "0.4.0", default-features = false, features = ["r1cs"
 ark-mnt6-298 = { version = "0.4.0", default-features = false, features = ["r1cs"] }
 ark-mnt4-753 = { version = "0.4.0", default-features = false, features = ["r1cs", "curve"] }
 ark-mnt6-753 = { version = "0.4.0", default-features = false, features = ["r1cs"] }
-ark-r1cs-std = { git = "https://github.com/Antalpha-Labs/r1cs-std/", default-features = false }
+ark-r1cs-std = { version = "0.4.0", path = "../r1cs-std", default-features = false }
 
 [features]
 default = ["parallel"]
@@ -77,3 +77,4 @@ lto = "thin"
 incremental = true
 debug-assertions = true
 debug = true
+
