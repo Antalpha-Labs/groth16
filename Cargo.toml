@@ -79,3 +79,21 @@ incremental = true
 debug-assertions = true
 debug = true
 
+[patch.crates-io]
+ark-ff = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-ec = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-poly = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-serialize = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-bls12-381 = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-mnt4-298 = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-mnt6-298 = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-mnt4-753 = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-mnt6-753 = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-bls12-377 = { git = "https://github.com/Antalpha-Labs/algebra/" }
+ark-bw6-761 = { git = "https://github.com/Antalpha-Labs/algebra/" }
+
+ark-r1cs-std = { git = "https://github.com/Antalpha-Labs/r1cs-std/" }
+ark-crypto-primitives = { git = "https://github.com/Antalpha-Labs/crypto-primitives/" }
+
+ark-relations = { git = "https://github.com/Antalpha-Labs/snark/" }
+ark-snark = { git = "https://github.com/Antalpha-Labs/snark/" }
